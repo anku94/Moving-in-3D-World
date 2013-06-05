@@ -1,0 +1,81 @@
+===================================
+Blocks game in OpenGL
+-----------------------------------
+Mayank Gupta
+===================================
+
+* Credits
+
+- Character borrowed from an online website
+- MD2Loader and Imageloader libraries borrowed from videotutorialsrock.com
+
+About
+----------------------------------
+
+The purpose of the game is to successfully move the robot to the block marked by white towers. Along the way, the robot has to navigate its way around various obstactles.
+
+The robot can move forward, turn left and right (arrow keys) and jump (Space/'j' key).
+
+Various types of blocks are found in the game, like
+
+1. Static blocks
+2. Moving blocks (can move either left/right/front/back or top/bottom)
+3. Fragile blocks - will break if you stand on them for too long
+4. Bouncy blocks - will cause the robot to jump
+5. Teleport blocks - cause the robot to teleport to a random block in the world
+
+Three types of objects are present in the word.
+
+1. Collectible spheres - add 1000 points to your total score
+2. Red cubes - cause health to decrease
+3. Purple towers - Will cause health to decrease if the robot collides with them for too long.
+
+------------------------------------------------------
+
+There are 9 camera view :-
+
+1.) The Robot View :-as seen by Robot eyes.
+
+2.) The Third Person View1 :-as seen by person eyes standing behind Robot.
+
+3.) The Third Person View2 :-as seen by person eyes standing Right to Robot.
+
+4.) The Third Person View3 :-as seen by person eyes standing at a distance from Robot.
+
+5.) The Tower View1 :-as seen from the starting corner of the world.
+
+6.) The Tower View2 :-as seen from the center of the world towards the Robot.
+
+7.) The Top View :-as seen from the center of the world from point above center towards the center.
+
+8.) The Tile View :-as seen from the selected Tile.
+
+9.) The Helicopter View :-as seen from the selected point.
+
+You can change the Tile in tile view by first pressing 'c' and then up/left/down/right .
+
+You can change the position of following camera view by pressing 'c' follwed by q/w ,a/s,, z/x   to increase/decrease  x,y,z coordinates respectively.
+
+1.)Tile view
+2.)Helicopter view
+
+How to run:
+-> The makefile compiles the code. (Type 'make' on the terminal)
+-> Now type './Game (on terminal) to run the executable. {linux}
+
+-------------------------------------------------------------------
+
+Controls:
+
+-> Press 'e' to change Camera View.
+
+-> Press 'c' to enter to Changing Camera position coordinates.
+
+-> You can use the up/down arrow keys to move the robot Forward-Backward.
+
+-> You can use the left/right arrow keys to rotate the robot clockwise/anticlockwise.
+
+-> Press 'spc or j' to jump.Use arrows key to move forward/backward or rotate clockwise/anticlockwise while jumping.
+
+-> Press 'esc' to quit.
+
